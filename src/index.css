@@ -1,13 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F9FAFB;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+/* cursore */
+.cursorGrow {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  mix-blend-mode: difference;
+  border: none;
+}
+/* portfolioh1 text */
+.portfolioh1 {
+  font-size: 250px;
+  line-height: 1;
+  display: flex;
+  color: transparent;
+  -webkit-text-stroke: 3px #000;
+  letter-spacing: 0.1em;
+  font-weight: 800px;
+  text-align: center;
+  visibility: hidden;
+  overflow: hidden;
+}
+/* animation text */
+.span::before {
+  content: attr(data-char);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-110%);
+  color: #000;
+  border: none;
+}
+/* stroke */
+.stroke {
+  -webkit-text-stroke: 3px #000;
+  /* color: transparent; */
+}
+/* frelance text */
+.freelance {
+  font-size: 350px;
+  color: black;
+  -webkit-text-stroke: 3px #000;
+  font-weight: 900;
+  line-height: 1;
+
+  /* transform: "translateX(-350%)"; */
+}
+
+/* span */
+.spantextfreelance {
+  font-size: 350px;
+  color: transparent;
+  -webkit-text-stroke: 3px #000;
+  font-weight: 900;
+  line-height: 1;
+
 }
