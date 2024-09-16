@@ -41,7 +41,7 @@ const AboutUs = () => {
 
     return (
         <>
-            <div className='w-full h-[100vh] bg-gray-50 flex justify-center items-center p-6'>
+            <div className='w-full h-[100vh] bg-gray-50 flex justify-center items-center p-8'>
                 <div className='w-full h-full bg-white rounded-md flex border border-black'>
                     {/* About yourself */}
                     <div className='w-[50%] h-auto flex flex-col p-6 justify-between'>

@@ -70,5 +70,19 @@ code {
   -webkit-text-stroke: 3px #000;
   font-weight: 900;
   line-height: 1;
-
 }
+.h1text {
+  font-size: 100px;
+  color: transparent;
+  -webkit-text-stroke: 3px #b9b9b9;
+  font-weight: 900;
+  line-height: 1;
+}
+.h1textcontact {
+  font-size: 100px;
+  color: transparent;
+  -webkit-text-stroke: 3px #000000;
+  font-weight: 900;
+  line-height: 1;
+}
+

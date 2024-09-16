@@ -79,12 +79,12 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="w-full h-auto py-10">
-            <div className='w-[14rem] h-[50px] pl-12'>
+        <div className="w-full h-auto  p-8">
+            <div className='w-[11rem] h-[50px] '>
                 <h1 className='text-4xl font-bold stroke relative z-10'>My Skills</h1>
                 <img className='w-full h-[15px] -mt-2' src={Highliter} alt='highlighter' />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6 px-10 mt-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6  mt-8">
                 {skills.map((skill, index) => (
                     <div
                         ref={(el) => (skillsRef.current[index] = el)}
