@@ -6,6 +6,7 @@ import { SiRedux, SiNextdotjs, SiGooglegemini } from "react-icons/si";
 import { FaNodeJs } from 'react-icons/fa6';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { IoLogoJavascript } from "react-icons/io5";
 
 // Import example images
 import SafeSky from '../../images/projects/safesk.png';
@@ -53,7 +54,7 @@ const Projects = () => {
             description: "A successful freelance project focused on reducing food waste by connecting donors, groceries, and seekers.",
             image: FreelanceFoodReduction,
             link: "https://example.com/freelance-food-reduction",
-            techstack: [<FaReact />, <SiRedux />, <RiTailwindCssFill />],
+            techstack: [<IoLogoJavascript />, <FaReact />, <SiRedux />, <RiTailwindCssFill />],
             type: "freelance",
         },
         {
@@ -62,7 +63,7 @@ const Projects = () => {
             description: "A project focused on providing real-time air quality and weather data to ensure safe living conditions.",
             image: SafeSky,
             link: "https://example.com/safesky",
-            techstack: [<FaReact />, <SiRedux />, <RiTailwindCssFill />, <IoSettings />],
+            techstack: [<IoLogoJavascript />, <FaReact />, <SiRedux />, <RiTailwindCssFill />, <IoSettings />],
             type: "project",
         },
         {
@@ -71,7 +72,7 @@ const Projects = () => {
             description: "A task management application designed to help users organize their daily activities and tasks efficiently.",
             image: Taskmaster,
             link: "https://example.com/taskmaster",
-            techstack: [<SiNextdotjs />, <SiRedux />, <RiTailwindCssFill />],
+            techstack: [<IoLogoJavascript />, <SiNextdotjs />, <SiRedux />, <RiTailwindCssFill />],
             type: "project",
         },
         {
@@ -80,7 +81,7 @@ const Projects = () => {
             description: "A platform for generating and managing captions for social media and other content.",
             image: CaptionNest,
             link: "https://example.com/captionnest",
-            techstack: [<FaReact />, <RiTailwindCssFill />, <IoSettings />, <SiGooglegemini />],
+            techstack: [<IoLogoJavascript />, <FaReact />, <RiTailwindCssFill />, <IoSettings />, <SiGooglegemini />],
             type: "project",
         },
         {
@@ -89,7 +90,7 @@ const Projects = () => {
             description: "An application that helps visualize data with interactive charts and graphs.",
             image: Chartify,
             link: "https://example.com/chartify",
-            techstack: [<FaReact />, <RiTailwindCssFill />, <IoSettings />, <SiGooglegemini />],
+            techstack: [<IoLogoJavascript />, <FaReact />, <RiTailwindCssFill />, <IoSettings />, <SiGooglegemini />],
             type: "project",
         },
         {
@@ -98,7 +99,7 @@ const Projects = () => {
             description: "An AI-powered content generation tool designed to craft engaging and relevant content for various platforms.",
             image: ContentCrafter,
             link: "https://example.com/contentcrafter",
-            techstack: [<FaReact />, <SiRedux />, <RiTailwindCssFill />, <IoSettings />, <SiGooglegemini />],
+            techstack: [<IoLogoJavascript />, <FaReact />, <SiRedux />, <RiTailwindCssFill />, <IoSettings />, <SiGooglegemini />],
             type: "project",
         },
         {
@@ -107,7 +108,7 @@ const Projects = () => {
             description: "A platform for collaborative innovation and project management.",
             image: Creovate,
             link: "https://example.com/creovate",
-            techstack: [<FaReact />, <RiTailwindCssFill />, <IoSettings />, <FaNodeJs />],
+            techstack: [<IoLogoJavascript />, <FaReact />, <RiTailwindCssFill />, <IoSettings />, <FaNodeJs />],
             type: "project",
         },
         {
@@ -116,7 +117,7 @@ const Projects = () => {
             description: "A comprehensive tool for tracking and analyzing cryptocurrency market trends.",
             image: Crypto,
             link: "https://example.com/crypto",
-            techstack: [<FaReact />, <RiTailwindCssFill />, <IoSettings />],
+            techstack: [<IoLogoJavascript />, <FaReact />, <RiTailwindCssFill />, <IoSettings />],
             type: "project",
         }
     ];

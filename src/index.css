@@ -26,7 +26,7 @@ code {
 }
 /* portfolioh1 text */
 .portfolioh1 {
-  font-size: 250px;
+  
   line-height: 1;
   display: flex;
   color: transparent;
@@ -79,9 +79,8 @@ code {
   line-height: 1;
 }
 .h1textcontact {
-  font-size: 100px;
   color: transparent;
-  -webkit-text-stroke: 3px #000000;
+  -webkit-text-stroke: 2px #000000;
   font-weight: 900;
   line-height: 1;
 }

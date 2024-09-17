@@ -127,10 +127,10 @@ const Hero = () => {
         <>
             <div ref={cursorRef} className='w-[20px] h-[20px] rounded-full border bg-black  border-black fixed z-50 pointer-events-none' style={{ display: 'none' }} />
 
-            <div ref={heroRef} className='w-full h-[110vh] flex justify-end items-end bg-gray-50 cursor-none'>
-                <div className='w-full h-[100vh] flex flex-col items-center'>
+            <div ref={heroRef} className='w-full h-auto flex justify-end items-end cursor-none'>
+                <div className='w-full h-auto flex flex-col items-center p-4 mt-14'>
                     {/* text animation */}
-                    <section className='flex flex-col justify-center mx-auto mt-4'>
+                    <section className='flex flex-col justify-center mx-auto mt-4 '>
                         {/* availablle */}
                         <div className='flex gap-4 items-end '>
                             <h1 className='text-4xl font-bold mt-4'>Hi <span >&#128075;</span> There I'm,</h1>
@@ -139,7 +139,7 @@ const Hero = () => {
                                 <p>Available 24/7</p>
                             </div>
                         </div>
-                        <h1 ref={textRef} className='text-center portfolioh1'>
+                        <h1 ref={textRef} className='text-center portfolioh1 xl:text-[230px] lg:text-[180px]'>
                             <span
                                 ref={el => charRefs.current[0] = el}
                                 className='block relative span'
@@ -267,7 +267,7 @@ const Hero = () => {
                     <p
                         onMouseEnter={() => handleHover(specialize.current, true)}
                         onMouseLeave={() => handleHover(specialize.current, false)}
-                        className='text-center w-[80%] mt-2'>
+                        className='text-center w-[80%] lg:w-[95%] mt-2'>
                         Passionate front-end web developer with 3 months of hands-on experience in building responsive websites and web applications using modern technologies like HTML, CSS, JavaScript, and React. Adept at implementing clean, efficient code and collaborating with design teams to create seamless user experiences. Skilled in leveraging frameworks like Bootstrap and Tailwind for UI design and using React with Next.js for dynamic applications                            </p>
                 </div>
             </div>

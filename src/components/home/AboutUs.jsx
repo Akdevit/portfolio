@@ -41,10 +41,10 @@ const AboutUs = () => {
 
     return (
         <>
-            <div className='w-full h-[100vh] bg-gray-50 flex justify-center items-center p-8'>
+            <div className='w-full h-auto bg-gray-50 flex justify-center items-center p-8'>
                 <div className='w-full h-full bg-white rounded-md flex border border-black'>
                     {/* About yourself */}
-                    <div className='w-[50%] h-auto flex flex-col p-6 justify-between'>
+                    <div className='w-[50%] h-auto flex flex-col gap-4 p-6 justify-between'>
                         {/* Text heading */}
                         <div className='w-[11rem] h-[50px]'>
                             <h1 className='text-4xl font-bold stroke relative z-10'>About Me</h1>
@@ -53,7 +53,7 @@ const AboutUs = () => {
 
                         <p
                             ref={textRef}
-                            className='text-2xl'
+                            className='xl:text-2xl lg:text-xl '
                         >
                             I'm a passionate front-end web developer with 3 months of hands-on
                             experience in crafting responsive websites and web applications. My
