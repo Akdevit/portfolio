@@ -117,29 +117,35 @@ const Hero = () => {
 
         document.addEventListener("mousemove", updateCursorPosition);
 
+
+
+
         // Cleanup the event listener on component unmount
         return () => {
             document.removeEventListener("mousemove", updateCursorPosition);
         };
+
+
     }, []);
+
 
     return (
         <>
             <div ref={cursorRef} className='w-[20px] h-[20px] rounded-full border bg-black  border-black fixed z-50 pointer-events-none' style={{ display: 'none' }} />
 
-            <div ref={heroRef} className='w-full h-auto flex justify-end items-end cursor-none'>
-                <div className='w-full h-auto flex flex-col items-center p-4 mt-14'>
+            <div ref={heroRef} className='w-full h-auto flex  items-end cursor-none'>
+                <div className='w-full h-auto flex flex-col items-center p-4'>
                     {/* text animation */}
-                    <section className='flex flex-col justify-center mx-auto mt-4 '>
+                    <section className='flex flex-col justify-center items-center  gap-8 '>
                         {/* availablle */}
-                        <div className='flex gap-4 items-end '>
-                            <h1 className='text-4xl font-bold mt-4'>Hi <span >&#128075;</span> There I'm,</h1>
+                        <div className='w-full flex gap-4 justify-start items-end flex-wrap '>
+                            <h1 className='xl:text-4xl lg:text-4xl md:text-4xl sm:text-3xl text-3xl font-bold mt-4'>Hi <span >&#128075;</span> There I'm,</h1>
                             <div className='py-1 px-2 border border-black rounded-xl flex items-center gap-2'>
                                 <span className='w-3 h-3 bg-green-800 rounded-full'></span>
                                 <p>Available 24/7</p>
                             </div>
                         </div>
-                        <h1 ref={textRef} className='text-center portfolioh1 xl:text-[230px] lg:text-[180px]'>
+                        <h1 ref={textRef} className='text-center portfolioh1 text-[15vw] xl:text-[220px] lg:text-[180px] md:text-[130px] sm:text-[120px] xs:text-[130px] font-bold'>
                             <span
                                 ref={el => charRefs.current[0] = el}
                                 className='block relative span'
@@ -199,7 +205,7 @@ const Hero = () => {
                         </h1>
                     </section>
                     {/*  */}
-                    <h1 className='text-center mt-2 text-3xl'
+                    <h1 className='text-center mt-2 text-xl xl:text-3xl'
                         onMouseEnter={() => handleHover(specialize.current, true)}
                         onMouseLeave={() => handleHover(specialize.current, false)}
                     >#Front End Web Developer</h1>
@@ -207,10 +213,10 @@ const Hero = () => {
 
                     {/* Services Section */}
                     <div ref={servicesRef} className='w-full h-auto flex flex-col gap-4 justify-center items-center mt-4'>
-                        <div className='flex flex-col items-center space-y-4'>
+                        <div className='flex flex-col items-center  '>
                             {/* <h2 className='text-2xl font-semibold'>Our Services</h2> */}
-                            <div className='flex space-x-6'>
-                                <div className='p-4 bg-white border border-black rounded-lg w-64 h-40 flex flex-col justify-between'>
+                            <div className='flex flex-wrap items-center justify-center gap-4 '>
+                                <div className='p-4 bg-white border border-black rounded-lg w-full h-auto  xl:w-64 xl:h-40 lg:w-64 lg:h-40 md:w-64 md:h-40 sm:w-64 sm:h-40 flex flex-col justify-around'>
                                     <h3 className='text-xl font-medium'
                                         onMouseEnter={() => handleHover(specialize.current, true)}
                                         onMouseLeave={() => handleHover(specialize.current, false)}
@@ -220,7 +226,7 @@ const Hero = () => {
                                         onMouseLeave={() => handleHover(specialize.current, false)}
                                     >Convert Figma or Adobe XD designs into pixel-perfect, responsive websites.</p>
                                 </div>
-                                <div className='p-4 bg-white border border-black rounded-lg w-64 h-40 flex flex-col justify-between'>
+                                <div className='p-4 bg-white border border-black rounded-lg w-full h-auto  xl:w-64 xl:h-40 lg:w-64 lg:h-40 md:w-64 md:h-40 sm:w-64 sm:h-40 flex flex-col justify-around'>
                                     <h3 className='text-xl font-medium'
                                         onMouseEnter={() => handleHover(specialize.current, true)}
                                         onMouseLeave={() => handleHover(specialize.current, false)}
@@ -230,7 +236,7 @@ const Hero = () => {
                                         onMouseLeave={() => handleHover(specialize.current, false)}
                                     >Create responsive, scalable websites with modern technologies for seamless user experiences.</p>
                                 </div>
-                                <div className='p-4 bg-white border border-black rounded-lg w-64 h-40 flex flex-col justify-between'>
+                                <div className='p-4 bg-white border border-black rounded-lg w-full h-auto  xl:w-64 xl:h-40 lg:w-64 lg:h-40 md:w-64 md:h-40 sm:w-64 sm:h-40 flex flex-col justify-around'>
                                     <h3 className='text-xl font-medium'
                                         onMouseEnter={() => handleHover(specialize.current, true)}
                                         onMouseLeave={() => handleHover(specialize.current, false)}
@@ -267,7 +273,7 @@ const Hero = () => {
                     <p
                         onMouseEnter={() => handleHover(specialize.current, true)}
                         onMouseLeave={() => handleHover(specialize.current, false)}
-                        className='text-center w-[80%] lg:w-[95%] mt-2'>
+                        className='text-center w-[100%] xl:w-[80%] lg:w-[95%] mt-2'>
                         Passionate front-end web developer with 3 months of hands-on experience in building responsive websites and web applications using modern technologies like HTML, CSS, JavaScript, and React. Adept at implementing clean, efficient code and collaborating with design teams to create seamless user experiences. Skilled in leveraging frameworks like Bootstrap and Tailwind for UI design and using React with Next.js for dynamic applications                            </p>
                 </div>
             </div>

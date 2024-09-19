@@ -82,6 +82,9 @@ const Nav = () => {
         };
     }, []);
 
+
+
+
     return (
         <>
             {/* Custom Cursor */}
@@ -97,6 +100,7 @@ const Nav = () => {
                     <div className='w-auto h-auto'>
                         <ul className='flex gap-4'>
                             <li ref={homeLinkRef}
+
                                 onMouseEnter={() => handleHover(homeLinkRef.current, true)}
                                 onMouseLeave={() => handleHover(homeLinkRef.current, false)}>
                                 <a href='/' className=''>Home</a>

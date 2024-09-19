@@ -18,6 +18,7 @@ import Creovate from '../../images/projects/creovate.png';
 import Crypto from '../../images/projects/crypto.png';
 import FreelanceFoodReduction from "../../images/projects/food.png";
 import Highliter from "../../images/higliter.png";
+import { FaGithub } from "react-icons/fa";
 
 // Register ScrollTrigger plugin for GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -123,14 +124,14 @@ const Projects = () => {
     ];
 
     return (
-        <div className="w-full h-auto  p-8">
-            <div className='w-full h-auto  flex justify-between'>
+        <div className="w-full h-auto  p-8 ">
+            <div className='w-full h-auto  flex xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col gap-4 justify-between'>
 
                 <div className="w-[14rem] h-[50px] ">
                     <h1 className="text-4xl font-bold stroke relative z-10">My Projects</h1>
                     <img className="w-full h-[15px] -mt-2" src={Highliter} alt="highlighter" />
                 </div>
-                <div className='py-1 px-4 border border-black rounded-lg flex items-center cursor-pointer hover:bg-black hover:text-white duration-100'>Explore more</div>
+                <div className='py-1 px-4 border border-black rounded-lg flex items-center gap-4 cursor-pointer hover:bg-black hover:text-white duration-100'><FaGithub className='text-xl' />Explore more</div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">

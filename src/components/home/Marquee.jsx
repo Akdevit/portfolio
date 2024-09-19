@@ -23,7 +23,7 @@ const Marquee = () => {
     }, []);
 
     return (
-        <div className="w-full h-[10vh] bg-black flex items-center overflow-hidden">
+        <div className="w-full h-[10vh] bg-black flex items-center overflow-hidden ">
             {/* Marquee content */}
             <div className="flex items-center gap-8 whitespace-nowrap" ref={marqueeInnerRef}>
                 {[...Array(10)].map((_, index) => (

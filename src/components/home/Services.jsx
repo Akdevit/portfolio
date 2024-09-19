@@ -58,7 +58,7 @@ const Services = () => {
                         start: 'top 80%',
                         toggleActions: 'play none none none',
                         once: true,
-                        scrub: 1
+                       
                     },
                     stagger: 0.1 * index,
                 }
@@ -68,7 +68,7 @@ const Services = () => {
 
     return (
         <>
-            <div className="w-full min-h-screen py-10 p-8">
+            <div className="w-full min-h-screen py-10 p-8 ">
                 {/* Header Section */}
                 <div className="w-[15rem] h-[50px] mb-10">
                     <h1 className="text-4xl font-bold stroke relative z-10">Our Services</h1>

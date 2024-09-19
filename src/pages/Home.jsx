@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../components/layout/Nav'
+// import Nav from '../components/layout/Nav'
 import Hero from "../components/home/Hero"
 import Marquee from "../components/home/Marquee"
 import AboutUs from '../components/home/AboutUs'
@@ -9,19 +9,23 @@ import Projects from '../components/home/Projects'
 import Services from '../components/home/Services'
 import Experience from '../components/home/Experience'
 import ContactMe from '../components/home/ContactMe '
+import Footer from '../components/layout/Footer'
 const home = () => {
+
+ 
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <Hero />
       <Marquee />
       <AboutUs />
       <Freelance />
       <Services />
-      <Skills />
+      <Skills  />
       <Projects />
       <Experience />
       <ContactMe />
+      <Footer/>
     </>
   )
 

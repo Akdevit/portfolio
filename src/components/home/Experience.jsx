@@ -13,28 +13,29 @@ const Experience = () => {
         {
             id: "1",
             role: "Front-end Web Developer",
-            company: "Webreate",
-            duration: "March 2023 - Present",
+            company: "Webreate ",
+            duration: "March 2024 - June 2024",
             description: "Developed responsive websites using React.js, Tailwind CSS, and managed state using Redux for live client projects.",
-            techstack: ["React.js", "Redux", "Tailwind CSS", "Next.js"],
+            techstack: ["HTML", "CSS", "React.js", "Redux", "Tailwind CSS", "Next.js", "TypeScript", "REST API", "Version Control"],
         },
         {
             id: "2",
             role: "Freelance Developer",
-            company: "Self-employed",
-            duration: "Jan 2022 - Feb 2023",
+            company: "Self-Employed",
+            duration: "July 2024 - July 2024",
             description: "Completed several freelance projects including creating custom websites for small businesses using modern web technologies.",
-            techstack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+            techstack: ["HTML", "CSS", "Tailwind", "JavaScript", "React.js", "Redux"],
         },
         {
             id: "3",
-            role: "Junior Web Developer",
-            company: "Tech Startup",
-            duration: "May 2021 - Dec 2021",
-            description: "Assisted in developing web applications with a focus on frontend development and UX design.",
-            techstack: ["HTML", "CSS", "JavaScript", "jQuery"],
+            role: "Front-end Web Developer",
+            company: "inSri Tech Solutions",
+            duration: "August 2024 - Present",
+            description: "Developed web applications with a focus on frontend development, UX design, and implementing debugging features. Collaborated with cross-functional teams to enhance performance, fix bugs, and optimize user interfaces, while also working on responsive design, accessibility, and code quality improvements.",
+            techstack: ["HTML", "CSS", "Tailwind", "JavaScript", "React.js", "REST API", "Version Control"],
         },
     ];
+
 
     useEffect(() => {
         cardsRef.current.forEach((card, index) => {
@@ -53,7 +54,7 @@ const Experience = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="w-full h-auto p-8">
+        <div ref={sectionRef} className="w-full h-auto xl:p-8 p-2 overflow-hidden">
             <div className='w-[11rem] h-[50px]'>
                 <h1 className='text-4xl font-bold stroke relative z-10'>Experience</h1>
                 <img className='w-full h-[15px] -mt-2' src={Highliter} alt='highlighter' />

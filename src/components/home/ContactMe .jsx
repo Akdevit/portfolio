@@ -126,7 +126,7 @@ const ContactMe = () => {
                             placeholder="Enter your message"
                             value={formData.message}
                             onChange={handleChange}
-                            className="w-full p-2 rounded-md border border-black bg-transparent outline-0"
+                            className="w-full p-2 rounded-md border border-black bg-transparent outline-0 resize-none"
                             required
                         />
                     </div>

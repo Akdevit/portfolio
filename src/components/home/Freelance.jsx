@@ -1,10 +1,10 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Office from "../../images/freelance/office.png"
-import Trophy from "../../images/freelance/trophy.png"
-import undefined from "../../images/freelance/undefined.png"
-import Award from "../../images/freelance/award.png"
+import Office from "../../images/freelance/office.png";
+import Trophy from "../../images/freelance/trophy.png";
+import UndefinedImage from "../../images/freelance/undefined.png"; // Changed variable name to avoid conflicts
+import Award from "../../images/freelance/award.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const Freelance = () => {
@@ -23,7 +23,7 @@ const Freelance = () => {
                     scrub: 1, // Smooth scrolling
                     pin: true, // Pin the section so the text scrolls horizontally
                     // markers: true, // Markers for debugging
-                }
+                },
             });
         });
 
@@ -32,30 +32,50 @@ const Freelance = () => {
 
     return (
         <>
-            <div ref={bodyContainer} id="page" className="w-full h-auto   p-4 overflow-hidden flex">
+            <div
+                ref={bodyContainer}
+                id="page"
+                className="w-full h-auto p-4 overflow-hidden flex"
+            >
                 {/* Horizontally scrolling text */}
-                <div ref={freelanceText} className="freelance whitespace-nowrap flex gap-12">
-                    <div className="p-2 rounded-md  text-black relative">
-                        <h1>Hire </h1>
-                        <img src={Office} alt="noted" className="w-40 h-auto absolute right-10 top-0" />
-
+                <div
+                    ref={freelanceText}
+                    className="freelance xl:text-[350px] lg:text-[300px] md:text-[250px] sm:text-[200px] text-[150px] whitespace-nowrap flex gap-12"
+                >
+                    <div className="p-2 rounded-md text-black relative">
+                        <h1>Hire</h1>
+                        <img
+                            src={Office}
+                            alt="office"
+                            className="xl:w-40 w-32 h-auto absolute right-10 -top-6"
+                        />
                     </div>
                     <h1>me</h1>
-                    <div className="p-2 rounded-md  text-black relative">
-                        <h1>as </h1>
-                        <img src={Trophy} alt="noted" className="w-40 h-auto absolute right-10 top-0" />
-
+                    <div className="p-2 rounded-md text-black relative">
+                        <h1>as</h1>
+                        <img
+                            src={Trophy}
+                            alt="trophy"
+                            className="xl:w-40 w-32 h-auto absolute right-10 -top-6"
+                        />
                     </div>
-                    <h1> a</h1>
+                    <h1>a</h1>
 
-                    <div className="p-2 rounded-md  text-black spantextfreelance relative">
+                    <div className="p-2 rounded-md text-black relative">
                         <h1>Freelancer</h1>
-                        <img src={undefined} alt="undefined" className="w-40 h-auto absolute right-9 top-4" />
-                        <img src={Award} alt="Award" className="w-40 h-auto absolute left-40 top-2" />
+                        <img
+                            src={UndefinedImage}
+                            alt="undefined"
+                            className="xl:w-40 w-32 h-auto absolute right-9 top-4"
+                        />
+                        <img
+                            src={Award}
+                            alt="Award"
+                            className="xl:w-40 w-32 h-auto absolute left-40 -top-6"
+                        />
                     </div>
                 </div>
             </div>
-
         </>
     );
 };

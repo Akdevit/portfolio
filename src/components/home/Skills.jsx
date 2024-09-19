@@ -21,6 +21,7 @@ import Highliter from "../../images/higliter.png";
 
 const Skills = () => {
     const skillsRef = useRef([]);
+    // const [skillsid, setSkillsid] = useState('')
 
 
     const skills = [
@@ -79,7 +80,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="w-full h-auto  p-8">
+        <div className="w-full h-auto  p-8 " >
             <div className='w-[11rem] h-[50px] '>
                 <h1 className='text-4xl font-bold stroke relative z-10'>My Skills</h1>
                 <img className='w-full h-[15px] -mt-2' src={Highliter} alt='highlighter' />
