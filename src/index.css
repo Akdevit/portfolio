@@ -115,3 +115,9 @@ code {
   font-weight: 900;
   line-height: 1;
 }
+.h1textlodder {
+  color: transparent;
+  -webkit-text-stroke: 2px #F9FAFB;
+  font-weight: 900;
+  line-height: 1;
+}
