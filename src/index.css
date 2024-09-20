@@ -95,6 +95,20 @@ code {
   font-weight: 900;
   line-height: 1;
 }
+
+/* responsive mobile larze devices*/
+@media (min-width: 768px) {
+  .h1textcontact {
+    -webkit-text-stroke: 2px #000;
+  }
+}
+/* responsive mobile smaller devices*/
+
+@media (max-width: 767px) {
+  .h1textcontact {
+    -webkit-text-stroke: 1px #000;
+  }
+}
 .footerh1 {
   color: #000;
   -webkit-text-stroke: 3px #000;

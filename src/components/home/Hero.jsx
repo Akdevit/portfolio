@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { FaWhatsapp } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { LuTwitter } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 // import { FaPhoneAlt } from "react-icons/fa";
@@ -250,21 +250,30 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className='flex gap-4'>
-                            <div ref={iconref} className='w-[40px] h-[40px] rounded-full bg-black flex justify-center items-center cursor-pointer'>
-                                <FaWhatsapp className='text-white text-xl' />
-                            </div>
-                            <div ref={iconrefTwitter} className='w-[40px] h-[40px] rounded-full bg-black flex justify-center items-center cursor-pointer'>
-                                <LuTwitter className='text-white text-xl' />
-                            </div>
+                            <a href='https://github.com/Akdevit?tab=repositories' target='_blanck' rel="noopener noreferrer">
+                                <div ref={iconref} className='w-[40px] h-[40px] rounded-full bg-black flex justify-center items-center cursor-pointer'>
+                                    <FaGithub className='text-white text-xl' />
+                                </div>
+                            </a>
+                            <a href='https://x.com/abhishek419242?t=BxV_Z1dJ3_ud75xSzhvGDg&s=08' target='_blanck' rel="noopener noreferrer" >
+                                <div ref={iconrefTwitter} className='w-[40px] h-[40px] rounded-full bg-black flex justify-center items-center cursor-pointer'>
+                                    <LuTwitter className='text-white text-xl' />
+                                </div>
+                            </a>
+                            <a href="https://wa.me/+918757049790?text=Hello! I found your portfolio and would like to discuss a project with you." target='_blanck' rel="noopener noreferrer" >
+                                <button ref={buttonhire} className='py-2 px-4 bg-black text-white rounded-md'>Hire me</button>
+                            </a>
 
-                            <button ref={buttonhire} className='py-2 px-4 bg-black text-white rounded-md'>Hire me</button>
-
-                            <div ref={iconreflinkedin} className='w-[40px] h-[40px] rounded-full bg-black flex justify-center items-center cursor-pointer'>
-                                <FaLinkedinIn className='text-white text-xl' />
-                            </div>
-                            <div ref={iconrefInstagram} className='w-[40px] h-[40px] rounded-full bg-black flex justify-center items-center cursor-pointer'>
-                                <FaInstagram className='text-white text-xl' />
-                            </div>
+                            <a href='https://www.linkedin.com/in/abhishek-kumar-123a492a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blanck' rel="noopener noreferrer" >
+                                <div ref={iconreflinkedin} className='w-[40px] h-[40px] rounded-full bg-black flex justify-center items-center cursor-pointer'>
+                                    <FaLinkedinIn className='text-white text-xl' />
+                                </div>
+                            </a>
+                            <a href='https://www.instagram.com/abhishek_65651?igsh=NDhsODBzd3Jzb204' target='_blanck' rel="noopener noreferrer" >
+                                <div ref={iconrefInstagram} className='w-[40px] h-[40px] rounded-full bg-black flex justify-center items-center cursor-pointer'>
+                                    <FaInstagram className='text-white text-xl' />
+                                </div>
+                            </a>
                         </div>
                     </div>
 

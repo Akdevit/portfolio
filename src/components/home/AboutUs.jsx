@@ -7,7 +7,7 @@ import SplitType from 'split-type';
 import { FaWhatsapp, FaLinkedinIn, FaFileDownload } from "react-icons/fa";
 import { LuTwitter } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
-
+import PDFResume from "../../images/pdf/resume_abhishek Kumar.pdf"
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,6 +35,18 @@ const AboutUs = () => {
             }
         );
     }, []);
+
+
+    /* downloade PDF */
+    const downloadFile = () => {
+        const link = document.createElement('a');
+        link.href = PDFResume;  // Specify the path to your PDF
+        link.download = 'Resume.pdf';  // File name to save as
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
 
     return (
         <div className='w-full h-auto bg-gray-50 flex justify-center items-center p-4 sm:p-6 lg:p-8 '>
@@ -69,22 +81,30 @@ const AboutUs = () => {
 
                     {/* Social media icons */}
                     <div className='flex gap-4'>
-                        <div className='w-10 h-10 rounded-full bg-black flex justify-center items-center cursor-pointer'>
-                            <FaWhatsapp className='text-white text-xl' />
-                        </div>
-                        <div className='w-10 h-10 rounded-full bg-black flex justify-center items-center cursor-pointer'>
-                            <LuTwitter className='text-white text-xl' />
-                        </div>
-                        <div className='w-10 h-10 rounded-full bg-black flex justify-center items-center cursor-pointer'>
-                            <FaLinkedinIn className='text-white text-xl' />
-                        </div>
-                        <div className='w-10 h-10 rounded-full bg-black flex justify-center items-center cursor-pointer'>
-                            <FaInstagram className='text-white text-xl' />
-                        </div>
+                        <a href="https://wa.me/+918757049790?text=Hello! I found your portfolio and would like to discuss a project with you." target='_blanck' rel="noopener noreferrer" >
+                            <div className='w-10 h-10 rounded-full bg-black flex justify-center items-center cursor-pointer'>
+                                <FaWhatsapp className='text-white text-xl' />
+                            </div>
+                        </a>
+                        <a href='https://x.com/abhishek419242?t=BxV_Z1dJ3_ud75xSzhvGDg&s=08' target='_blanck' rel="noopener noreferrer" >
+                            <div className='w-10 h-10 rounded-full bg-black flex justify-center items-center cursor-pointer'>
+                                <LuTwitter className='text-white text-xl' />
+                            </div>
+                        </a>
+                        <a href='https://www.linkedin.com/in/abhishek-kumar-123a492a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blanck' rel="noopener noreferrer" >
+                            <div className='w-10 h-10 rounded-full bg-black flex justify-center items-center cursor-pointer'>
+                                <FaLinkedinIn className='text-white text-xl' />
+                            </div>
+                        </a>
+                        <a href='https://www.instagram.com/abhishek_65651?igsh=NDhsODBzd3Jzb204' target='_blanck' rel="noopener noreferrer" >
+                            <div className='w-10 h-10 rounded-full bg-black flex justify-center items-center cursor-pointer'>
+                                <FaInstagram className='text-white text-xl' />
+                            </div>
+                        </a>
                     </div>
 
                     {/* CV download */}
-                    <div className='w-full sm:w-60 h-12 bg-black text-white rounded-md flex justify-center items-center cursor-pointer gap-2 mt-4'>
+                    <div onClick={downloadFile} className='w-full sm:w-60 h-12 bg-black text-white rounded-md flex justify-center items-center cursor-pointer gap-2 mt-4'>
                         Download Resume
                         <FaFileDownload className='text-white' />
                     </div>

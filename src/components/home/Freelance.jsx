@@ -47,7 +47,7 @@ const Freelance = () => {
                         <img
                             src={Office}
                             alt="office"
-                            className="xl:w-40 w-32 h-auto absolute right-10 -top-6"
+                            className="xl:w-40 w-20 h-auto absolute right-10 -top-6"
                         />
                     </div>
                     <h1>me</h1>
@@ -56,22 +56,22 @@ const Freelance = () => {
                         <img
                             src={Trophy}
                             alt="trophy"
-                            className="xl:w-40 w-32 h-auto absolute right-10 -top-6"
+                            className="xl:w-40 w-20 h-auto absolute right-10 -top-6"
                         />
                     </div>
                     <h1>a</h1>
 
-                    <div className="p-2 rounded-md text-black relative">
+                    <div className="p-2 rounded-md spantextfreelance text-black relative">
                         <h1>Freelancer</h1>
                         <img
                             src={UndefinedImage}
                             alt="undefined"
-                            className="xl:w-40 w-32 h-auto absolute right-9 top-4"
+                            className="xl:w-40 w-20 h-auto absolute right-9 top-4"
                         />
                         <img
                             src={Award}
                             alt="Award"
-                            className="xl:w-40 w-32 h-auto absolute left-40 -top-6"
+                            className="xl:w-40 w-20 h-auto absolute left-40 -top-6"
                         />
                     </div>
                 </div>
