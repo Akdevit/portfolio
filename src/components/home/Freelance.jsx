@@ -69,7 +69,7 @@ const Freelance = () => {
             </div>
             <h1 
                 ref={subTitleRef} 
-                className="h1textcontact text-center px-4 text-[30px] sm:text-[40px] lg:text-[60px] xl:text-[100px]"
+                className="h1textcontact text-center px-4 text-[30px] sm:text-[40px] lg:text-[60px] xl:text-[90px]"
             >
                 Available for Freelance Work: Front-End Development and Design
             </h1>
