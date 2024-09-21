@@ -1,82 +1,91 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Office from "../../images/freelance/office.png";
 import Trophy from "../../images/freelance/trophy.png";
-import UndefinedImage from "../../images/freelance/undefined.png"; // Changed variable name to avoid conflicts
-import Award from "../../images/freelance/award.png";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Freelance = () => {
-    const bodyContainer = useRef(null);
-    const freelanceText = useRef(null);
+    const sectionRef = useRef(null);
+    const titleRef = useRef(null);
+    const subTitleRef = useRef(null);
+    const trophyRef = useRef(null);
+    const buttonRef = useRef(null);
 
     useLayoutEffect(() => {
-        let ctx = gsap.context(() => {
-            gsap.to(freelanceText.current, {
-                xPercent: -100, // Move text fully to the left
-                ease: "none", // Linear scrolling effect
-                scrollTrigger: {
-                    trigger: bodyContainer.current, // Scroll effect starts on this container
-                    start: "top 20%", // Start when container reaches the top of viewport
-                    end: () => "+=" + bodyContainer.current.offsetWidth, // End after scrolling through the container
-                    scrub: 1, // Smooth scrolling
-                    pin: true, // Pin the section so the text scrolls horizontally
-                    // markers: true, // Markers for debugging
-                },
-            });
+        // Timeline for animations
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top center",
+                toggleActions: "play none none reverse",
+            },
         });
 
-        return () => ctx.revert(); // Cleanup on unmount
+        // Animation for title with scaling effect
+        tl.fromTo(
+            titleRef.current, 
+            { scale: 0, opacity: 0 },
+            { scale: 1, opacity: 1, duration: 1.5, ease: "elastic.out(1, 0.5)" }
+        )
+        // SubTitle animation with rotate effect
+        .fromTo(
+            subTitleRef.current,
+            { rotateX: 90, opacity: 0 },
+            { rotateX: 0, opacity: 1, duration: 1.2, ease: "power2.out" },
+            "-=1" // Overlap animation by 1 second
+        )
+        // Trophy animation with spin and fade-in
+        .fromTo(
+            trophyRef.current,
+            { rotateY: 360, opacity: 0 },
+            { rotateY: 0, opacity: 1, duration: 1, ease: "power3.out" },
+            "-=0.5"
+        )
+        // Button animation with slight bounce effect
+        .fromTo(
+            buttonRef.current,
+            { scale: 0, opacity: 0 },
+            { scale: 1, opacity: 1, duration: 1, ease: "bounce.out" },
+            "-=0.5"
+        );
     }, []);
 
     return (
-        <>
-            <div
-                ref={bodyContainer}
-                id="page"
-                className="w-full h-auto p-4 overflow-hidden flex"
-            >
-                {/* Horizontally scrolling text */}
-                <div
-                    ref={freelanceText}
-                    className="freelance xl:text-[350px] lg:text-[300px] md:text-[250px] sm:text-[200px] text-[150px] whitespace-nowrap flex gap-12"
+        <div className="w-full h-auto flex flex-col gap-4 justify-center items-center mt-6 py-4 overflow-hidden" ref={sectionRef}>
+            <div className="w-auto h-auto relative ">
+                <h1 
+                    ref={titleRef} 
+                    className="footerh1 text-center px-4 text-[70px] sm:text-[100px] lg:text-[200px] xl:text-[250px]"
                 >
-                    <div className="p-2 rounded-md text-black relative">
-                        <h1>Hire</h1>
-                        <img
-                            src={Office}
-                            alt="office"
-                            className="xl:w-40 w-20 h-auto absolute right-10 -top-6"
-                        />
-                    </div>
-                    <h1>me</h1>
-                    <div className="p-2 rounded-md text-black relative">
-                        <h1>as</h1>
-                        <img
-                            src={Trophy}
-                            alt="trophy"
-                            className="xl:w-40 w-20 h-auto absolute right-10 -top-6"
-                        />
-                    </div>
-                    <h1>a</h1>
-
-                    <div className="p-2 rounded-md spantextfreelance text-black relative">
-                        <h1>Freelancer</h1>
-                        <img
-                            src={UndefinedImage}
-                            alt="undefined"
-                            className="xl:w-40 w-20 h-auto absolute right-9 top-4"
-                        />
-                        <img
-                            src={Award}
-                            alt="Award"
-                            className="xl:w-40 w-20 h-auto absolute left-40 -top-6"
-                        />
-                    </div>
-                </div>
+                    Freelancer
+                </h1>
+                <img
+                    ref={trophyRef}
+                    src={Trophy}
+                    alt="Trophy"
+                    className="absolute w-14 sm:w-16 lg:w-32 xl:w-40 h-auto -top-8 sm:-top-8 lg:-top-12 xl:-top-16 z-10 xl:right-8 right-4 sm:right-12 transform -translate-y-1/2"
+                />
             </div>
-        </>
+            <h1 
+                ref={subTitleRef} 
+                className="h1textcontact text-center px-4 text-[30px] sm:text-[40px] lg:text-[60px] xl:text-[100px]"
+            >
+                Available for Freelance Work: Front-End Development and Design
+            </h1>
+            <a
+                href="https://api.whatsapp.com/send?phone=+918757049790&text=Hello!%20I%20am%20interested%20in%20hiring%20you%20as%20a%20freelancer."
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <div 
+                    ref={buttonRef} 
+                    className="p-2 px-4 rounded-md bg-black text-white cursor-pointer mt-4 sm:text-[14px] lg:text-[18px] xl:text-[20px]"
+                >
+                    Hire me as a Freelancer
+                </div>
+            </a>
+        </div>
     );
 };
 
