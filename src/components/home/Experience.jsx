@@ -32,7 +32,7 @@ const Experience = () => {
             company: "inSri Tech Solutions",
             duration: "August 2024 - Present",
             description: "Developed web applications with a focus on frontend development, UX design, and implementing debugging features. Collaborated with cross-functional teams to enhance performance, fix bugs, and optimize user interfaces, while also working on responsive design, accessibility, and code quality improvements.",
-            techstack: ["HTML", "CSS", "Tailwind", "JavaScript", "React.js", "REST API", "Version Control","Next.js", "TypeScript"],
+            techstack: ["HTML", "CSS", "Tailwind", "JavaScript", "React.js", "REST API", "Version Control","Next.js", "TypeScript","G-sap"],
         },
     ];
 
