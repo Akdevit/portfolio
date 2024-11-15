@@ -22,7 +22,7 @@ const Experience = () => {
             id: "2",
             role: "Freelance Developer",
             company: "Self-Employed",
-            duration: "July 2024 - July 2024",
+            duration: "June 2024 - July 2024",
             description: "Completed several freelance projects including creating custom websites for small businesses using modern web technologies.",
             techstack: ["HTML", "CSS", "Tailwind", "JavaScript", "React.js", "Redux"],
         },
