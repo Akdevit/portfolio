@@ -7,7 +7,7 @@ import SplitType from 'split-type';
 import { FaWhatsapp, FaLinkedinIn, FaFileDownload } from "react-icons/fa";
 import { LuTwitter } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
-import PDFResume from "../../images/pdf/resume_abhishek Kumar.pdf"
+import PDFResume from "../../images/pdf/resume-Abhishek kumar.pdf"
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,19 +64,9 @@ const AboutUs = () => {
                         ref={textRef}
                         className='text-base sm:text-lg lg:text-xl'
                     >
-                        I'm a passionate front-end web developer with 3 months of hands-on
-                        experience in crafting responsive websites and web applications. My
-                        expertise lies in utilizing modern technologies like HTML, CSS,
-                        JavaScript, and React to deliver user-friendly and efficient solutions.
-                        I take pride in writing clean, optimized code while collaborating
-                        closely with design teams to bring seamless user experiences to life.
-                        <br />
-                        I’m also skilled in leveraging frameworks like Bootstrap and Tailwind CSS
-                        for intuitive and visually appealing UI designs. Additionally, I work
-                        with React and Next.js to build dynamic, high-performance applications
-                        that align with modern web standards. My focus is on delivering fast,
-                        responsive, and accessible web projects that meet the needs of users and
-                        businesses alike.
+                        I am an accomplished Front-End Web Developer with expertise in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React.js, and Next.js. My proficiency spans both web development and design, enabling me to create visually stunning and highly functional user interfaces.
+                        Currently, I am contributing to Insri Tech Solutions, where I am actively involved in live projects, delivering innovative and impactful solutions that align with client needs and business goals.
+                        With a strong track record of success and a dedication to continuous learning, I am passionate about mastering the art of web development. I am eager to leverage my skills, creativity, and commitment to excellence to drive value and success for your team.
                     </p>
 
                     {/* Social media icons */}
