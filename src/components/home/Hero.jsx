@@ -283,7 +283,7 @@ const Hero = () => {
                         onMouseEnter={() => handleHover(specialize.current, true)}
                         onMouseLeave={() => handleHover(specialize.current, false)}
                         className='text-center w-[100%] xl:w-[80%] lg:w-[95%] mt-2'>
-                        I am an accomplished Front-End Web Developer with expertise in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React.js, and Next.js. My proficiency spans both web development and design, enabling me to create visually stunning and highly functional user interfaces. Currently, I am contributing to Insri Tech Solutions, where I am actively involved in live projects, delivering innovative and impactful solutions that align with client needs and business goals. With a strong track record of success and a dedication to continuous learning, I am passionate about mastering the art of web development. I am eager to leverage my skills, creativity, and commitment to excellence to drive value and success for your team.
+                        I am a skilled Front-End Web Developer with expertise in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React.js, and Next.js. Currently at Insri Tech Solutions, I deliver innovative, user-focused web solutions. With a strong design sense and a passion for continuous learning, I aim to create impactful digital experiences that align with client goals.
                         </p>
                 </div>
             </div>
